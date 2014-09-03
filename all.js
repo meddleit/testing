@@ -3,6 +3,14 @@ var env = "http://heavymeddle.dynalias.net:82";
 
 // The standard wait time to use when waiting for AJAX requests to finish
 var wait = 2000;
+
+var username = "dalek@johnshammas.com";
+
+var password = "qwopasklzxnm";
+
+var firstName = "Greg";
+
+
 /*
 The format of a Dalek unit test is as follows:
 
@@ -51,6 +59,26 @@ module.exports = {
             .assert.exists("meddles .preview", "Meddles loaded")
             .assert.text(".listing-title h1").to.contain("Latest Meddles from", "Topic title shown")
             .done();
+    },
+    "Signin": function(test) {
+        test
+            .open(env + "/signin")
+            .wait(wait)
+            .type('input[name="hm_name"]', username)
+
+        .type('input[name="hm_password"]', password)
+
+        .click('.sign-in-form button[type="submit"]')
+
+        .wait(wait)
+
+        .assert.url(env + "/", 'Redirected to homepage')
+
+        .text('header .name', firstName, 'Name seen in navbar is correct')
+
+
+
+        .done();
     },
     // See explanation in 00/01 file
 
