@@ -1,0 +1,1 @@
+.assert.exists("meddlers img", "Top Meddlers shown")

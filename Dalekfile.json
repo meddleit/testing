@@ -1,0 +1,6 @@
+{
+	"html-reporter": {
+		"dest": "reports"
+	},
+	"reporter": ["console", "html"]
+}

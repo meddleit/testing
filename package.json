@@ -1,0 +1,22 @@
+{
+  "name": "mdl-automated-testing",
+  "version": "0.0.0",
+  "description": "Meddle automated testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Shammas",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-concat": "^2.3.4",
+    "dalek-browser-chrome": "0.0.10",
+    "gulp": "^3.8.6",
+    "dalek-reporter-html": "0.0.3",
+    "dalek-browser-ie": "0.0.4",
+    "dalek-browser-firefox": "0.0.6",
+    "dalekjs": "0.0.8",
+    "dalek-browser-ios": "0.0.3",
+    "gulp-js-prettify": "^0.1.0"
+  }
+}
