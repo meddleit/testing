@@ -1,6 +1,6 @@
-.type('input[name="hm_name"]' , username) 
+.type('input[name="hm_name"]' , basicUsername) 
 
-.type('input[name="hm_password"]' , password) 
+.type('input[name="hm_password"]' , basicPassword) 
 
 .click('.sign-in-form button[type="submit"]') 
 
@@ -8,6 +8,8 @@
 
 .assert.url(env +"/" , 'Redirected to homepage')
 
-.text('header .name' , firstName , 'Name seen in navbar is correct')   
+.assert.text('header .name' , firstName , 'Name seen in navbar is correct')   
 
+.open(env +"/logout.json") 
 
+.wait(wait)
