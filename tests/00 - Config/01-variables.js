@@ -13,3 +13,12 @@ var firstName = "Greg";
 var twUsername = basicUsername;
 
 var twPassword = basicPassword;
+
+var fbUsername = basicUsername; 
+
+var fbPassword = basicPassword; 
+
+var inUsername = basicUsername; 
+
+var inPassword = basicPassword; 
+
