@@ -1,0 +1,12 @@
+.open (env + "/organization/meddle/edit/topics")
+
+.type ("th input", settingValues.topic)
+
+.select ("select option[value='0']")
+.submit("form[name='queryForm']")
+
+.refresh
+/* Need to check class
+.assert.val (".swatch background-softwareDevelopment" , )
+*/
+.assert.val ("tbody:nth-last-child(1)[tr:nth-child(3) span class='swatch background-softwareDevelopment]")

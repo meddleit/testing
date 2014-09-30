@@ -22,3 +22,4 @@ var inUsername = basicUsername;
 
 var inPassword = basicPassword; 
 
+var testPassword = testPassword; 
